@@ -8,7 +8,7 @@
 #     marge_json_path:  请填写网络地址的json文件，用于合并，不带空格！！！
 spider_settings:
   enable: true
-  json_url: "https://blog.scfc.top/friend.json"
+  json_url: "https://scfc.top/friend.json"
   article_count: 6
   merge_result:
     enable: false
@@ -38,7 +38,7 @@ rss_subscribe:
   enable: true
   github_username: SCFCN
   github_repo: Friend-Circle-Lit
-  your_blog_url: https://blog.scfc.top/
+  your_blog_url: https://scfc.top/
   email_template: "./rss_subscribe/email_template.html"
   website_info:
     title: "SCFCの博客"
