@@ -11,7 +11,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 # COMMAND="python3 $SCRIPT_DIR/run.py"
 
 # # 定义定时任务的执行间隔（例如每四小时一次）
-# INTERVAL="4"
+# INTERVAL="1"
 
 # 添加定时任务到 crontab
 # (crontab -l 2>/dev/null; echo "0 */$INTERVAL * * * $COMMAND >> $CRON_LOG_FILE 2>&1 && echo '运行成功'") | crontab -
