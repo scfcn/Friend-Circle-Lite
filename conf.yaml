@@ -8,7 +8,7 @@
 #     marge_json_path:  请填写网络地址的json文件，用于合并，不带空格！！！
 spider_settings:
   enable: true
-  json_url: "https://qxzhan.cn/friend.jsoo"
+  json_url: "https://qxzhan.cn/friend.json"
   article_count: 7
   merge_result:
     enable: false
@@ -50,8 +50,8 @@ rss_subscribe:
 #   port：              SMTP 端口号
 #   use_tls：           是否使用 tls 加密
 smtp:
-  email: noreply@xnet.ren
-  server: smtp.qiye.aliyun.com
+  email: qxzhan@foxmail.com
+  server: smtp.qq.com
   port: 465
   use_tls: true
 
