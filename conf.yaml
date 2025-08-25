@@ -9,7 +9,7 @@
 spider_settings:
   enable: true
   json_url: "https://qxzhan.cn/friend.json"
-  article_count: 7
+  article_count: 5
   merge_result:
     enable: false
     merge_json_url: "https://fc.qxzhan.cn"
