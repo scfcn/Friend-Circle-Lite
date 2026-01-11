@@ -8,11 +8,11 @@
 #     marge_json_path:  请填写网络地址的json文件，用于合并，不带空格！！！
 spider_settings:
   enable: true
-  json_url: "https://qxzhan.cn/friend.json"
+  json_url: "https://www.qixz.cn/friend.json"
   article_count: 5
   merge_result:
     enable: false
-    merge_json_url: "https://fc.qxzhan.cn"
+    merge_json_url: "https://fc.qixz.cn"
 
 # 邮箱推送功能配置，暂未实现，等待后续开发
 # 解释：每天为指定邮箱推送所有友链文章的更新，仅能指定一个
@@ -38,7 +38,7 @@ rss_subscribe:
   enable: true
   github_username: scfcn
   github_repo: Friend-Circle-Lite
-  your_blog_url: https://qxzhan.cn/
+  your_blog_url: https://www.qixz.cn/
   email_template: "./push_templates/default.html"
   website_info:
     title: "青序栈"
