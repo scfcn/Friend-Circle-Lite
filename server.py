@@ -7,18 +7,25 @@ import random
 
 app = FastAPI()
 
-# 设置静态文件目录
-app.mount("/static", StaticFiles(directory="static"), name="static")
-app.mount("/main", StaticFiles(directory="main"), name="main")
+origins = [
+    "*",  # 开发环境允许所有源，生产环境替换为具体域名
+    "https://fc.qixz.cn",
+    "https://www.qixz.cn",
+]
 
 # 添加 CORS 中间件
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=origins,        # 允许跨域的源
+    allow_credentials=True,       # 允许携带Cookie/凭证
+    allow_methods=["*"],          # 允许所有HTTP方法
+    allow_headers=["*"],          # 允许所有请求头
 )
+
+# 设置静态文件目录
+app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/main", StaticFiles(directory="main"), name="main")
+
 # 返回图标图片
 @app.get("/favicon.ico", response_class=HTMLResponse)
 async def favicon():
